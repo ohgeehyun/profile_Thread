@@ -4,8 +4,7 @@
 읽기/쓰기 락 분리 및 **DFS 기반 데드락 탐지 기능**이 포함되어 있어 디버깅과 안정성 확보에 유리합니다.
 
 ---
-##flowchart
-
+# flowchart
 
 ```mermaid
 flowchart TD
