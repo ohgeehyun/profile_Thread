@@ -18,7 +18,7 @@ flowchart TD
     F -->|Yes| G[WriteCount 증가]
     F -->|No| H[스핀 + 타임아웃 대기]
     H --> E
-    G --> I[PushLock(name)]
+    G --> I[PushLock]
 
     B -->|ReadLock| J[자기 자신이 Write 소유?]
     J -->|Yes| K[ReadCount 증가 후 리턴]
@@ -32,7 +32,7 @@ flowchart TD
     N --> P
 
     P --> Q[업무 처리]
-    Q --> R[락 해제 → PopLoc(name]
+    Q --> R[락 해제 → PopLock]
 ```
 ---
 
