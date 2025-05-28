@@ -24,7 +24,7 @@ flowchart TD
     J -->|Yes| K[ReadCount 증가 후 리턴]
     J -->|No| L[CAS로 ReadCount 증가 시도]
     L --> M{성공?}
-    M -->|Yes| N[PushLock(name)]
+    M -->|Yes| N[PushLock]
     M -->|No| O[스핀 + 타임아웃 대기]
     O --> L
 
