@@ -32,7 +32,7 @@ flowchart TD
     N --> P
 
     P --> Q[업무 처리]
-    Q --> R[락 해제 → PopLock(name)]
+    Q --> R[락 해제 → PopLoc(name]
 ```
 ---
 
