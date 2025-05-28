@@ -43,7 +43,7 @@ flowchart TD
 - 읽기/쓰기 락을 분리하여 관리
 - CAS 기반 스핀락 구현
 - 타임아웃 대기 및 재귀적 쓰기 락 허용
-
+- bitflag를 통한 원자적 레벨에서 읽기/쓰기 관리
 ### LockGuard
 
 - `RAII` 방식으로 자동 Lock/Unlock
@@ -67,3 +67,5 @@ flowchart TD
 | Read 다중 허용    | ✅ 허용    | 동시에 여러 스레드 가능     |
 
 ---
+
+
